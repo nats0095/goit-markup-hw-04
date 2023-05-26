@@ -19,7 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      rel="stylesheet"
+      href="node_modules/modern-normalize/modern-normalize.css"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
@@ -44,7 +47,9 @@
         </nav>
         <div class="contact">
           <a class="contact-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
+            ><svg class="contact-icon" width="16" height="12">
+              <use href="images/icons.svg#icon-mail"></use>
+          </svg>info@devstudio.com</a
           >
           <a class="contact-link" href="tel:+48111111111">+48 111 111 111</a>
         </div>
@@ -63,6 +68,17 @@
       <section class="main-description">
         <ul class="main-description-list container list">
           <li>
+            <div class="description-icon">
+              <svg
+                  class="icon icon-antenna"
+                  width="70"
+                  height="70"
+              >
+                  <use
+                      xlink:href="images/icons.svg#icon-antenna"
+                  ></use>
+              </svg>
+          </div>
             <h3 class="main-description-title">LOREM IPSUM</h3>
             <p class="main-description-content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -70,6 +86,13 @@
             </p>
           </li>
           <li>
+            <div class="description-icon">
+              <svg class="icon icon-clock" width="70" height="70">
+                  <use
+                      xlink:href="images/icons.svg#icon-clock"
+                  ></use>
+              </svg>
+          </div>
             <h3 class="main-description-title">LOREM IPSUM</h3>
             <p class="main-description-content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -77,6 +100,17 @@
             </p>
           </li>
           <li>
+            <div class="description-icon">
+              <svg
+                  class="icon icon-diagram"
+                  width="70"
+                  height="70"
+              >
+                  <use
+                      xlink:href="images/icons.svg#icon-diagram"
+                  ></use>
+              </svg>
+          </div>
             <h3 class="main-description-title">LOREM IPSUM</h3>
             <p class="main-description-content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -84,6 +118,17 @@
             </p>
           </li>
           <li>
+            <div class="description-icon">
+              <svg
+                  class="icon icon-astronaut"
+                  width="70"
+                  height="70"
+              >
+                  <use
+                      xlink:href="images/icons.svg#icon-astronaut"
+                  ></use>
+              </svg>
+          </div>
             <h3 class="main-description-title">LOREM IPSUM</h3>
             <p class="main-description-content">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -142,6 +187,44 @@
                 <figcaption class="team-description">
                   <h3>John Doe</h3>
                   <p class="team-description-text">Product Designer</p>
+                  <ul class="team-contact list">
+                    <li class="team-list-icon">
+                      <svg
+                        class="team-icon icon-instagram"
+                        width="20"
+                        height="20"
+                      >
+                        <use xlink:href="images/icons.svg#icon-instagram"></use>
+                      </svg>
+                    </li>
+                    <li class="team-list-icon">
+                      <svg
+                        class="team-icon icon-twitter"
+                        width="20"
+                        height="20"
+                      >
+                        <use xlink:href="images/icons.svg#icon-twitter"></use>
+                      </svg>
+                    </li>
+                    <li class="team-list-icon">
+                      <svg
+                        class="team-icon icon-facebook"
+                        width="20"
+                        height="20"
+                      >
+                        <use xlink:href="images/icons.svg#icon-facebook"></use>
+                      </svg>
+                    </li>
+                    <li class="team-list-icon">
+                      <svg
+                        class="team-icon icon-linkedin"
+                        width="20"
+                        height="20"
+                      >
+                        <use xlink:href="images/icons.svg#icon-linkedin"></use>
+                      </svg>
+                    </li>
+                  </ul>
                 </figcaption>
               </figure>
             </li>
@@ -156,7 +239,54 @@
                 />
                 <figcaption class="team-description">
                   <h3>John Doe</h3>
-                  <p class="team-description-text">Fronted Developer</p>
+                  <p class="team-description-text">Fronted Developer</p>  <ul class="team-contact list">
+                    <li class="team-list-icon">
+                        <svg
+                            class="team-icon icon-instagram"
+                            width="20"
+                            height="20"
+                        >
+                            <use
+                                xlink:href="images/icons.svg#icon-instagram"
+                            ></use>
+                        </svg>
+                    </li>
+                    <li class="team-list-icon">
+                        <svg
+                            class="team-icon icon-twitter"
+                            width="20"
+                            height="20"
+                        >
+                            <use
+                                xlink:href="images/icons.svg#icon-twitter"
+                            ></use>
+                        </svg>
+                    </li>
+                    <li class="team-list-icon">
+                        <svg
+                            class="team-icon icon-facebook"
+                            width="20"
+                            height="20"
+                        >
+                            <use
+                                xlink:href="images/icons.svg#icon-facebook"
+                            ></use>
+                        </svg>
+                    </li>
+                    <li class="team-list-icon">
+                        <svg
+                            class="team-icon icon-linkedin"
+                            width="20"
+                            height="20"
+                        >
+                            <use
+                                xlink:href="images/icons.svg#icon-linkedin"
+                            ></use>
+                        </svg>
+                    </li>
+                </ul>
+            </div>
+        </li>
                 </figcaption>
               </figure>
             </li>
@@ -171,7 +301,51 @@
                 />
                 <figcaption class="team-description">
                   <h3>John Doe</h3>
-                  <p class="team-description-text">Marketing</p>
+                  <p class="team-description-text">Marketing</p> <li class="team-list-icon">
+                    <svg
+                        class="team-icon icon-instagram"
+                        width="20"
+                        height="20"
+                    >
+                        <use
+                            xlink:href="images/icons.svg#icon-instagram"
+                        ></use>
+                    </svg>
+                </li>
+                <li class="team-list-icon">
+                    <svg
+                        class="team-icon icon-twitter"
+                        width="20"
+                        height="20"
+                    >
+                        <use
+                            xlink:href="images/icons.svg#icon-twitter"
+                        ></use>
+                    </svg>
+                </li>
+                <li class="team-list-icon">
+                    <svg
+                        class="team-icon icon-facebook"
+                        width="20"
+                        height="20"
+                    >
+                        <use
+                            xlink:href="images/icons.svg#icon-facebook"
+                        ></use>
+                    </svg>
+                </li>
+                <li class="team-list-icon">
+                    <svg
+                        class="team-icon icon-linkedin"
+                        width="20"
+                        height="20"
+                    >
+                        <use
+                            xlink:href="images/icons.svg#icon-linkedin"
+                        ></use>
+                    </svg>
+                </li>
+            </ul>
                 </figcaption>
               </figure>
             </li>
@@ -186,16 +360,97 @@
                 />
                 <figcaption class="team-description">
                   <h3>John Doe</h3>
-                  <p class="team-description-text">UI Designer</p>
+                  <p class="team-description-text">UI Designer</p> <li class="team-list-icon">
+                    <svg
+                        class="team-icon icon-instagram"
+                        width="20"
+                        height="20"
+                    >
+                        <use
+                            xlink:href="images/icons.svg#icon-instagram"
+                        ></use>
+                    </svg>
+                </li>
+                <li class="team-list-icon">
+                    <svg
+                        class="team-icon icon-twitter"
+                        width="20"
+                        height="20"
+                    >
+                        <use
+                            xlink:href="images/icons.svg#icon-twitter"
+                        ></use>
+                    </svg>
+                </li>
+                <li class="team-list-icon">
+                    <svg
+                        class="team-icon icon-facebook"
+                        width="20"
+                        height="20"
+                    >
+                        <use
+                            xlink:href="images/icons.svg#icon-facebook"
+                        ></use>
+                    </svg>
+                </li>
+                <li class="team-list-icon">
+                    <svg
+                        class="team-icon icon-linkedin"
+                        width="20"
+                        height="20"
+                    >
+                        <use
+                            xlink:href="images/icons.svg#icon-linkedin"
+                        ></use>
+                    </svg>
+                </li>
+            </ul>
+        </div>
+    </li>
                 </figcaption>
               </figure>
             </li>
           </ul>
         </div>
       </section>
+      <section class="clients section">
+        <h2 class="caption">Nasi klienci</h2>
+        <ul class="clients-list list">
+            <li class="clients-item"> 
+                <svg class="clients-icon icon-logo1" width="106" height="60,04">
+                    <use xlink:href="images/icons.svg#icon-logo1"></use>
+                </svg>
+            </li>
+            <li class="clients-item">
+                <svg class="clients-icon icon-logo2" width="106" height="60,04">
+                    <use xlink:href="images/icons.svg#icon-logo2"></use>
+                </svg>
+            </li>
+            <li class="clients-item">
+                <svg class="clients-icon icon-logo3" width="106" height="60,04">
+                    <use xlink:href="images/icons.svg#icon-logo3"></use>
+                </svg>
+            </li>
+            <li class="clients-item">
+                <svg class="clients-icon icon-logo4" width="106" height="60,04">
+                    <use xlink:href="images/icons.svg#icon-logo4"></use>
+                </svg>
+            </li>
+            <li class="clients-item">
+                <svg class="clients-icon icon-logo5" width="106" height="60,04">
+                    <use xlink:href="images/icons.svg#icon-logo5"></use>
+                </svg>
+            </li>
+            <li class="clients-item">
+                <svg class="clients-icon icon-logo6" width="106" height="60,04">
+                    <use xlink:href="images/icons.svg#icon-logo6"></use>
+                </svg>
+            </li>
+        </ul>
+    </section>
     </main>
     <footer class="bottom">
-      <section class="container">
+      <section class="container footer-flex">
         <a class="logo" href="index.html">
           Web<span class="logo-part2">Studio</span></a
         >
@@ -213,7 +468,55 @@
               <li class="our-address-item">
                 <a class="our-address-link" href="tel:+48111111111"
                   >+48 111 111 111</a
-                >
+                ></li>
+              </ul>
+          </address>
+                <div class="join-main">
+                  <p class="address-join">Dołącz do nas</p>
+                  <ul class="address-contact list">
+                      <li class="address-join-item">
+                          <svg
+                              class="address-icon icon-instagram"
+                              width="20"
+                              height="20"
+                          >
+                              <use
+                                  xlink:href="images/icons.svg#icon-instagram"
+                              ></use>
+                          </svg>
+                      </li>
+                      <li class="address-join-item">
+                          <svg
+                              class="address-icon icon-twitter"
+                              width="20"
+                              height="20"
+                          >
+                              <use
+                                  xlink:href="images/icons.svg#icon-twitter"
+                              ></use>
+                          </svg>
+                      </li>
+                      <li class="address-join-item">
+                          <svg
+                              class="address-icon icon-facebook"
+                              width="20"
+                              height="20"
+                          >
+                              <use
+                                  xlink:href="images/icons.svg#icon-facebook"
+                              ></use>
+                          </svg>
+                      </li>
+                      <li class="address-join-item">
+                          <svg
+                              class="address-icon icon-linkedin"
+                              width="20"
+                              height="20"
+                          >
+                              <use
+                                  xlink:href="images/icons.svg#icon-linkedin"
+                              ></use>
+                          </svg>
               </li>
             </ul>
           </address>

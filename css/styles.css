@@ -6,6 +6,7 @@
   --brand-color-black: rgba(0, 0, 0, 1);
   --brand-color-black2: rgba(33, 33, 33, 1);
   --brand-color-blue: rgba(33, 150, 243, 1);
+  --brand-color-gray3: rgba(175, 177, 184, 1);
 }
 body {
   font-family: "Roboto", sans-serif;
@@ -86,7 +87,10 @@ ul {
   display: flex;
   gap: 50px;
 }
-
+.contact-icon {
+  margin-right: 10px;
+  fill: var(--brand-color-gray3);
+}
 .contact-link {
   color: var(--brand-color-gray2);
   font-style: normal;
@@ -95,12 +99,27 @@ ul {
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+.contact-link:hover .contact-icon {
+  fill: var(--brand-color-blue);
+}
+.contact-link:focus .contact-icon {
+  fill: var(--brand-color-blue);
 }
 .contact-link:hover {
   color: var(--brand-color-blue);
 }
 .main-section {
   background-color: var(--brand-color-dark);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(C:\Users\dell\OneDrive\Pulpit\github\goit-markup-hw-04\images\background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -128,12 +147,12 @@ ul {
   background-color: var(--brand-color-blue);
   color: var(--brand-color-white);
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
 
   text-align: center;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.03em;
   border: none;
   cursor: pointer;
   padding: 10px 41px 10px 42px;
@@ -183,6 +202,16 @@ ul {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   margin-bottom: 10px;
+  margin-top: 30px;
+}
+.description-icon {
+  width: 270px;
+  height: 120px;
+  background-color: var(--brand-color-gray);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  border-radius: 4px;
 }
 .main-description-content {
   font-size: 14px;
@@ -266,11 +295,65 @@ ul {
   color: var(--brand-color-gray2);
   padding-bottom: 30px;
 }
+.team-icon {
+  fill: var(--brand-color-gray3);
+}
+.team-list-icon:hover .team-icon {
+  fill: var(--brand-color-white);
+  background-color: var(--brand-color-blue);
+}
+.team-list-icon {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.team-list-icon:hover {
+  background-color: var(--brand-color-blue);
+}
+.clients-list {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-top: 50px;
+}
+.clients-item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid var(--brand-color-gray3);
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.clients-item:hover {
+  border-color: var(--brand-color-blue);
+}
+.clients-icon {
+  fill: var(--brand-color-gray3);
+}
+
+.clients-item:hover .clients-icon {
+  fill: var(--brand-color-blue);
+}
+.clients-item:focus .clients-icon {
+  fill: var(--brand-color-blue);
+}
 .project-list {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   padding-bottom: 94px;
+}
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
 }
 .project-information {
   border-bottom: solid 1px #ececec;
@@ -324,4 +407,51 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
+}
+.main-join {
+  margin-left: 70px;
+}
+
+.join-main > p {
+  color: var(--brand-color-white);
+  font-size: 14px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.address-join {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--brand-color-white);
+  margin-bottom: 20px;
+  margin-top: 12px;
+}
+.address-contact {
+  display: flex;
+  gap: 10px;
+}
+.address-icon {
+  fill: var(--brand-color-white);
+}
+.address-join-item {
+  background-color: rgba(255, 255, 255, 0.1);
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+.address-join-item:hover {
+  background-color: var(--brand-color-blue);
+}
+.footer-flex {
+  display: flex;
+  align-content: center;
+  gap: 70px;
 }
