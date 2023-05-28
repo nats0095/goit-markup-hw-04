@@ -113,8 +113,11 @@ ul {
 }
 .main-section {
   background-color: var(--brand-color-dark);
-  background-image: linear-gradient rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4),
-    url("C:\Users\dell\OneDrive\Pulpit\github\goit-markup-hw-04\images\background-img.jpg");
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/background-img.jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -254,16 +257,15 @@ ul {
   border-radius: 0px 0px 4px 4px;
 
   display: inline-block;
-  margin-right: 30px;
 }
 .team-image {
   display: block;
   margin-bottom: 30px;
+  margin: 0;
+  padding: 0;
 }
 .team-list {
-  display: flex;
-  margin: 0;
-  width: 100%;
+  white-space: nowrap;
 }
 .team-header {
   margin-bottom: 50px;
@@ -294,8 +296,7 @@ ul {
 .team-icon {
   fill: var(--brand-color-gray3);
 }
-.team-contact {
-  margin: 0 auto;
+
 }
 .team-list-icon:hover .team-icon {
   fill: var(--brand-color-white);
