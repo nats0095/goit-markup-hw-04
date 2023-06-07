@@ -1,3 +1,7 @@
+* {
+  margin: 0;
+  padding: 0;
+}
 :root {
   --brand-color-white: rgba(255, 255, 255, 1);
   --brand-color-gray: rgba(245, 244, 250, 1);
@@ -255,6 +259,7 @@ ul {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
   display: inline-block;
+  margin-right: 30px;
 }
 .team-image {
   display: block;
@@ -287,7 +292,13 @@ ul {
   letter-spacing: 0.03em;
 
   color: var(--brand-color-gray2);
+  padding-top: 10px;
   padding-bottom: 30px;
+}
+.team-contact {
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-evenly;
 }
 .team-icon {
   fill: var(--brand-color-gray3);
@@ -303,6 +314,7 @@ ul {
   align-items: center;
   justify-content: space-evenly;
   gap: 10px;
+  white-space: nowrap;
   border-radius: 50%;
   cursor: pointer;
 }
